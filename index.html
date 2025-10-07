@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ma Boutique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Ma Boutique en Ligne</h1>
+  </header>
+
+  <main>
+    <div class="produits">
+      <div class="produit">
+        <h2>Produit A</h2>
+        <p>Prix : 10€</p>
+        <button onclick="ajouterAuPanier('Produit A', 10)">Ajouter au panier</button>
+      </div>
+      <div class="produit">
+        <h2>Produit B</h2>
+        <p>Prix : 15€</p>
+        <button onclick="ajouterAuPanier('Produit B', 15)">Ajouter au panier</button>
+      </div>
+    </div>
+
+    <h2>🛒 Panier</h2>
+    <ul id="panier"></ul>
+    <p id="total">Total : 0€</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
